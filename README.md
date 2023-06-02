@@ -24,21 +24,21 @@ The model follows the following general behavior:
 Initialization: The model initializes the global variables and sets up the environment, stages, and persons.
 
 Simulation Loop: The model enters a loop where it repeatedly executes the following steps:
-    Person Movement: Each person determines its current direction and moves towards the next patch.
-    stage Selection: Persons may change their stage choice based on their rationality and the current environment conditions.
-    State Transitions: Persons may transition between different states (start, walk, wait, surge, panic, end) based on their current situation.
-    Update Globals: The model updates global variables to track and record relevant information.
-    Tick: The model advances the simulation time by one tick.
+1. Person Movement: Each person determines its current direction and moves towards the next patch.
+2. Stage Selection: Persons may change their stage choice based on their rationality and the current environment conditions.
+3. State Transitions: Persons may transition between different states (start, walk, wait, surge, panic, end) based on their current situation.
+4. Update Globals: The model updates global variables to track and record relevant information.
+5. Tick: The model advances the simulation time by one tick.
 
 
 ## Running the Model
 To run the model, follow these steps:
 
-Set the desired parameters such as the number of persons, rationality percentage, and environment type in the "setup" procedure.
-Click the "setup" button to initialize the model.
-Click the "go" button to start the simulation.
-The simulation will run for a specified number of ticks, and you can observe the movement and behavior of the crowd.
-You can adjust the simulation parameters and rerun the model as needed.
+1. Set the desired parameters such as the number of persons, rationality percentage, and environment type in the "setup" procedure.
+2. Click the "setup" button to initialize the model.
+3. Click the "go" button to start the simulation.
+4. The simulation will run for a specified number of ticks, and you can observe the movement and behavior of the crowd.
+
 
 ## Brief Explanation of Functions
 globals:
