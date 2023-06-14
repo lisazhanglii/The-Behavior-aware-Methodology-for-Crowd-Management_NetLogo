@@ -2,6 +2,21 @@
 This is the assistant code for thesis The-Behavior-aware-Methodology-for-Crowd-Management.
 DEMO URL LINK:https://youtu.be/jApC8Nh8fM0
 
+
+## How to Run the Model and Get the Best Switch-index
+
+1. Set the desired parameters of environment and swich-index (10, 20, 30, 40 separately)in the "setup" procedure.
+2. Click the "setup" button to initialize the model.
+3. Click the "go" button to start the simulation.
+4. The simulation will run for a specified number of ticks, and you can observe the movement and behavior of the crowd.
+5. Right-click the panel of "frequency of changing stages" and "panic&surge average" and then click export separately.
+6. Open the results excel sheets and get the frequency and average panic&surge value at B1018, store the value.
+7. Fill the y1 array of visualization.py with the result of "frequency of changing stages" in switch-index 10, 20, 30 40 separately. Change the figure title in line 34 as well.
+8. Fill the y2 array of visualization.py with the result of "panic&surge average" in switch-index 10, 20, 30 40 separately.
+9. Run the visualization.py and get the visualization result to get the best switch-index under this environment setting.
+
+
+
 ## Model Components
 Persons
 The crowd is composed of individual persons.
@@ -30,14 +45,6 @@ Simulation Loop: The model enters a loop where it repeatedly executes the follow
 4. Update Globals: The model updates global variables to track and record relevant information.
 5. Tick: The model advances the simulation time by one tick.
 
-
-## Running the Model
-To run the model, follow these steps:
-
-1. Set the desired parameters such as the number of persons, rationality percentage, and environment type in the "setup" procedure.
-2. Click the "setup" button to initialize the model.
-3. Click the "go" button to start the simulation.
-4. The simulation will run for a specified number of ticks, and you can observe the movement and behavior of the crowd.
 
 
 ## Brief Explanation of Functions
