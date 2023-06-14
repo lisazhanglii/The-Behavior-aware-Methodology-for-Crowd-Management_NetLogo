@@ -1,6 +1,7 @@
 # The-Behavior-aware-Methodology-for-Crowd-Management_NetLogo
 This is the assistant code for thesis The-Behavior-aware-Methodology-for-Crowd-Management.
 DEMO URL LINK:https://youtu.be/jApC8Nh8fM0
+The NetLogo code is in the main.nlogo and the visualization code is in the visualization.py.
 
 
 ## How to Run the Model and Get the Best Switch-index
