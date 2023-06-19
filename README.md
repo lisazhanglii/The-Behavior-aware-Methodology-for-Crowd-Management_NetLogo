@@ -9,10 +9,10 @@ The NetLogo code is in the main.nlogo and the visualization code is in the visua
 0. Please add (1)"setup", "go" button, (2)"num-agents", "waiting-threshold-surge", "waiting-threshold-panic", "bar-restroom-frequency", "bar-restroom-time", "switch-index" sliders in the GUI of NetLogo. Furthermore, set three plots as followed:
 
 
-![Screen Shot 2023-06-19 at 3.42.08 PM.png](..%2F..%2FDesktop%2FScreen%20Shot%202023-06-19%20at%203.42.08%20PM.png)
-![Screen Shot 2023-06-19 at 3.46.40 PM.png](..%2F..%2FDesktop%2FScreen%20Shot%202023-06-19%20at%203.46.40%20PM.png)
-![Screen Shot 2023-06-19 at 3.46.32 PM.png](..%2F..%2FDesktop%2FScreen%20Shot%202023-06-19%20at%203.46.32%20PM.png)
-![Screen Shot 2023-06-19 at 3.46.12 PM.png](..%2F..%2FDesktop%2FScreen%20Shot%202023-06-19%20at%203.46.12%20PM.png)
+![Example Image](./img4.png)
+![Example Image](./img1.png)
+![Example Image](./img2.png)
+![Example Image](./img3.png)
 
 
 1. Set the desired parameters of environment and swich-index (10, 20, 30, 40 separately)in the "setup" procedure.
