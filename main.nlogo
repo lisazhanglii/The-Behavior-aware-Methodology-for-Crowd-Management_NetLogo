@@ -132,7 +132,7 @@ to go
   if density-person <= 0.7 and (member? area-now dangerlist) = true [ set dangerlist remove area-now dangerlist]
  ; if max-density < density-person [set max-density density-person]
 
-  ifelse bar-index > 0 [str6 ifelse bar-index > bar-restoom-time [set bar-index 0][set bar-index bar-index + 1]]; when people will go bar
+  ifelse bar-index > 0 [str6 ifelse bar-index > bar-restroom-time [set bar-index 0][set bar-index bar-index + 1]]; when people will go bar
     [
       ifelse ticks mod bar-restroom-frequency = 1 [let r random 10 if r < 4 [str6 set bar-index bar-index + 1]];this is to choose some people to go bar
       [
@@ -535,7 +535,9 @@ end
 to setup-agents
   clear-turtles
   reset-ticks
+
   create-persons num-agents [
+    random-seed 1
     move-to one-of patches with [structure-type = "floor" and (not any? other turtles-here) and (table:get steps-to-exits "left" > 2)  and (table:get steps-to-exits "right" > 2) and (table:get steps-to-exits "bar" > 2) and (table:get steps-to-exits "restroom" > 2)]
     set color 9.9
     set state "start"
@@ -593,9 +595,9 @@ to setup-exterior-walls
 end
 
 to setup-exits
-  if (env-type = 1) [setup-exit 0 26 0 3 "left"  setup-exit 50 26 0 3 "right"]
-  if (env-type = 2) [setup-exit 0 50 0 3 "left"  setup-exit 50 3 0 3 "right" setup-exit 20 50 0 0 "bar" setup-exit 20 0 0 0 "restroom"]
-  if (env-type = 3) [setup-exit 0 26 0 3 "left"  setup-exit 50 3 0 3 "right" setup-obstacles]
+
+  setup-exit 0 50 0 3 "left"  setup-exit 50 3 0 3 "right" setup-exit 20 50 0 0 "bar" setup-exit 20 0 0 0 "restroom"
+
 
 
 end
@@ -608,6 +610,8 @@ end
 to setup-exit [startx starty len wid id]
   let exits patches with [(pxcor >= startx and pycor <= starty) and (pxcor <= startx + len and pycor >= starty - wid)]
   ask exits [set walkable? false set structure-type "exit" set exit-id id set pcolor red]
+  ask exits [if(pxcor >= 10 and pycor >= 15)[set pcolor yellow]]
+  ask exits [if(pxcor <= 30 and pycor <= 15)[set pcolor blue]]
 
 end
 
