@@ -4,8 +4,8 @@ import plotly.graph_objects as go
 import numpy as np
 
 x_original = np.array([10, 20, 30, 40])
-y1_original = np.array([0.00693641618497109, 0.00592417061611374, 0.00609756097560975, 0.00549450549450549])
-y2_original = np.array([0.843177189409368, 1.1665, 1.4465, 1.7465])
+y1_original = np.array([0.037111334002006, 0.0412474849094567, 0.022022022022022, 0.024390243902439])
+y2_original = np.array([4.68, 3.2435, 8.9685, 9.951])
 
 x_interpolated = np.arange(10, 41, 1)
 y1_interpolated = np.interp(x_interpolated, x_original, y1_original)
