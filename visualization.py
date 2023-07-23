@@ -2,10 +2,10 @@ import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
 import numpy as np
-# d group
+
 x_original = np.array([10, 20, 30, 40])
-y1_original = np.array([0.00696055684454756, 0.00604838709677419, 0.006048387, 0.00512295081967213])
-y2_original = np.array([0.641, 1.0105, 1.23, 1.8665])
+y1_original = np.array([0.00693641618497109, 0.00592417061611374, 0.00609756097560975, 0.00549450549450549])
+y2_original = np.array([0.843177189409368, 1.1665, 1.4465, 1.7465])
 
 x_interpolated = np.arange(10, 41, 1)
 y1_interpolated = np.interp(x_interpolated, x_original, y1_original)
