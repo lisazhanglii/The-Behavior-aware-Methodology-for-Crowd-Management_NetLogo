@@ -2,7 +2,7 @@ import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
 import numpy as np
-
+# d group
 x_original = np.array([10, 20, 30, 40])
 y1_original = np.array([0.00696055684454756, 0.00604838709677419, 0.006048387, 0.00512295081967213])
 y2_original = np.array([0.641, 1.0105, 1.23, 1.8665])
